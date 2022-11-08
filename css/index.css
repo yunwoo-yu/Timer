@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "Pretendard";
+  src: url("/font/Pretendard-Bold.woff2") format("woff2"),
+    url("/font/Pretendard-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("/font/Pretendard-Regular.woff2") format("woff2"),
+    url("/font/Pretendard-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+html,
+body {
+  font-family: "Pretendard";
+  font-size: 14px;
+  font-weight: normal;
+}
+
+#container {
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(
+    96.74% 276.79% at 3.59% 5.28%,
+    #f0f4ff 0%,
+    #a5b6ee 100%
+  );
+}
+
+header {
+  padding-top: 72px;
+}
+
+header h1 {
+  text-align: center;
+}
+
+#contentTimer {
+  width: 400px;
+  height: 360px;
+  padding: 48px 44px 40px;
+  margin: 60px auto 0;
+  background: linear-gradient(144.07deg, #5572bb 2.13%, #374b7c 102.97%);
+  box-shadow: 20px 20px 60px 10px rgba(55, 75, 124, 0.4);
+  border-radius: 16px;
+}
+#contentTimer h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 29px;
+  color: #fff;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #3d538a;
+}
+
+.timer-form {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  padding: 33px 0 0;
+  border-top: 1px solid #5b75b4;
+}
+
+.timer-form div {
+  width: 80px;
+}
+.timer-form .timer-label {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #a5b6ee;
+  margin-bottom: 4px;
+}
+
+.timer-form .timer-btn {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(314.28deg, #304577 0%, #4c65a0 83%);
+  border: 1px solid #354971;
+  padding: 16px 14px 16px 13px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+#contentTimer .timer-btn-box {
+  width: 236px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+#contentTimer .timer-btn-box button {
+  width: 112px;
+  height: 48px;
+  margin-top: 40px;
+  padding: 0;
+  border: none;
+  background: #324577;
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #617199;
+  cursor: not-allowed;
+}
+#contentTimer .timer-btn-box button img {
+  vertical-align: top;
+}

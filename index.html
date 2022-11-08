@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>
+          <img src="/assets/weniv-logo.svg" alt="위니브 로고" />
+        </h1>
+      </header>
+      <section id="contentTimer">
+        <h2>TIMER</h2>
+        <div class="timer-form">
+          <div>
+            <p for="hrs" class="timer-label">HRS</p>
+            <button type="button" id="hrs" class="timer-btn"></button>
+          </div>
+          <div>
+            <p for="min" class="timer-label">MIN</p>
+            <button type="button" id="min" class="timer-btn"></button>
+          </div>
+          <div>
+            <p for="sec" class="timer-label">SEC</p>
+            <button type="button" id="sec" class="timer-btn"></button>
+          </div>
+        </div>
+        <div class="timer-btn-box">
+          <button type="button" class="start-btn">
+            <img
+              class="start-btn-img"
+              src="/assets/icon-start-disabled.svg"
+              alt="시작 버튼"
+            />
+            START
+          </button>
+          <button type="button" class="reset-btn">
+            <img
+              class="reset-btn-img"
+              src="/assets/icon-reset-disabled.svg"
+              alt="리셋 버튼"
+            />
+            RESET
+          </button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
