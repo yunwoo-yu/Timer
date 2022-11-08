@@ -102,7 +102,26 @@ header h1 {
   display: flex;
   justify-content: space-between;
 }
+
 #contentTimer .timer-btn-box button {
+  width: 112px;
+  height: 48px;
+  margin-top: 40px;
+  padding: 0;
+  border: none;
+  background: #5180ff;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+#contentTimer .timer-btn-box button:last-child {
+  background: #fb7099;
+}
+#contentTimer .timer-btn-box button:disabled {
   width: 112px;
   height: 48px;
   margin-top: 40px;
@@ -110,13 +129,18 @@ header h1 {
   border: none;
   background: #324577;
   box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.05);
-  border-radius: 50px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
   color: #617199;
   cursor: not-allowed;
 }
+
+#contentTimer .timer-btn-box .stop-btn {
+  background: #15c2b8;
+}
+
+#contentTimer .timer-btn-box button.active {
+  display: block;
+}
+
 #contentTimer .timer-btn-box button img {
   vertical-align: top;
 }
