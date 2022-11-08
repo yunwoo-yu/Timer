@@ -114,6 +114,10 @@ const timerReset = () => {
   timeHour = 0;
   timeMin = 0;
   timeSec = 0;
+  startBtn.disabled = true;
+  resetBtn.disabled = true;
+  startBtnImg.src = "/assets/icon-start-disabled.svg";
+  resetBtnImg.src = "/assets/icon-reset-disabled.svg";
   hrsBtn.textContent = timeSec.toString().padStart(2, "0");
   minBtn.textContent = timeMin.toString().padStart(2, "0");
   secBtn.textContent = timeHour.toString().padStart(2, "0");
