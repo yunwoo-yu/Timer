@@ -144,3 +144,13 @@ header h1 {
 #contentTimer .timer-btn-box button img {
   vertical-align: top;
 }
+
+small {
+  display: block;
+  font-size: 14px;
+  line-height: 17px;
+  color: #8596bf;
+  text-align: center;
+  margin-top: 60px;
+  padding-bottom: 103px;
+}
