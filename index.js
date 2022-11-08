@@ -99,8 +99,8 @@ const timerStart = () => {
 
       startBtn.disabled = true;
       resetBtn.disabled = true;
-      startBtnImg.src = "/assets/icon-start-disabled.svg";
-      resetBtnImg.src = "/assets/icon-reset-disabled.svg";
+      startBtnImg.src = "assets/icon-start-disabled.svg";
+      resetBtnImg.src = "assets/icon-reset-disabled.svg";
       stopBtn.classList.remove("active");
       startBtn.classList.add("active");
     }
@@ -116,8 +116,8 @@ const timerReset = () => {
   timeSec = 0;
   startBtn.disabled = true;
   resetBtn.disabled = true;
-  startBtnImg.src = "/assets/icon-start-disabled.svg";
-  resetBtnImg.src = "/assets/icon-reset-disabled.svg";
+  startBtnImg.src = "assets/icon-start-disabled.svg";
+  resetBtnImg.src = "assets/icon-reset-disabled.svg";
   hrsBtn.textContent = timeSec.toString().padStart(2, "0");
   minBtn.textContent = timeMin.toString().padStart(2, "0");
   secBtn.textContent = timeHour.toString().padStart(2, "0");
@@ -128,8 +128,8 @@ const setBtnImg = (button, time) => {
   button.textContent = time.toString().padStart(2, "0");
   startBtn.disabled = false;
   resetBtn.disabled = false;
-  startBtnImg.src = "/assets/icon-start.svg";
-  resetBtnImg.src = "/assets/icon-reset.svg";
+  startBtnImg.src = "assets/icon-start.svg";
+  resetBtnImg.src = "assets/icon-reset.svg";
 };
 
 // type을 넣어서 반복구문 줄이고 addEventListener 깨끗하게 관리하기
