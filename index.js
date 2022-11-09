@@ -21,9 +21,9 @@ let timeMin = 0;
 let timeSec = 0;
 
 // 처음 textContent를 00으로 할당.
-hrsBtn.textContent = timeSec.toString().padStart(2, "0");
+hrsBtn.textContent = timeHour.toString().padStart(2, "0");
 minBtn.textContent = timeMin.toString().padStart(2, "0");
-secBtn.textContent = timeHour.toString().padStart(2, "0");
+secBtn.textContent = timeSec.toString().padStart(2, "0");
 
 //time이 0일 경우 버튼을 비활성화 처음에 비활성화로 시작하기 위함.
 if (time === 0) {
@@ -192,3 +192,11 @@ stopBtn.addEventListener("click", () => {
   stopBtn.classList.remove("active");
   startBtn.classList.add("active");
 });
+
+const test = [1, 2, 3, 4, 5];
+test.reduce((acc, cur) => {
+  acc += cur;
+  return acc;
+}, 0);
+
+const testObj = { name: "대운", price: 500, ship: 1000 };
